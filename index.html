@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./images/web_icon.png">
+    <title>The Essentials</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gabriela&family=Ubuntu&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="home">
+        <div class="extra">
+            <h1 style="color: #f5f3f3;">Featured Products</h1>
+        </div>
+        <nav class="nav">
+            <ul>
+                <li><img src="./images/logo.png" alt="" onclick="change('index.html')"></li>
+                <li class="navi"><a href="#">Home</a></li>
+                <li class="navi"><a href="./Static/sellproduct.html">Sell Product</a></li>
+                <li class="navi"><a href="#hr1">Shop</a></li>
+                <li class="navi"><a href="./Static/aboutUs1.html">About Us</a></li>
+                <li class="navi"><a href="./Static/contact.html">Contact Us</a></li>
+                <li><a id="i_cart" href="./Static/cart.html" target="_blank"><i class="fa fa-shopping-cart"></i></a></li>
+                <p id="tot">0</p>
+                <li class="navi" id="clr" onclick="clr()"><a>Clear</a></li>
+            </ul>
+        </nav>
+        <div class="banner marbtm">
+            <div id="box1">
+                <div id="box11">
+                    <h1>The Essentials</h1>
+                    <p>One stop solution for all you stationary product needs.<br><br>Buy and Sell.</p>
+                </div>       
+                <div id="box12">
+                    <img src="./images/icon-1.png" alt="">
+                    <img src="./images/icon-2.png" alt="">
+                    <img src="./images/icon-3.png" alt="">
+                    <img src="./images/icon-4.png" alt="">
+                    <img src="./images/icon-5.png" alt="">
+                    <img src="./images/icon-6.png" alt="">
+                </div>
+            </div>
+            <div id="box3">
+                <img src="./images/stats.jpg" width="550px" alt="">
+            </div>
+            <div id="box2">
+                <h6>Upto</h6>
+                <h6>50%</h6>
+                <h6>Off</h6>
+                <h6>------</h6>
+                <h6>Valid</h6>
+                <h6>for</h6>
+                <h6>3days</h6>
+            </div>
+        </div>
+        <div class="products marbtm">
+            <!-- <h1 style="color: #f5f3f3;">Featured Products</h1> -->
+            <h1>Featured Products</h1>
+            <div class="table center1">
+                <div class="monitor-wrapper center2">
+                    <div class="monitor center3">
+                        <p id="slp">SALE! SALE! SALE! Upto 70% OFF ON Featured Products...   Upto 50% OFF ON Desk Accessories...   Upto 35% OFF ON School Supplies...</p>
+                    </div>
+                </div>
+            </div>
+            <div class="section">
+                <div class="p1">
+                    <img src="./images/p1.png" alt="">
+                    <p>Kangaro Desk Essentials HS-G10 All Metal Stapler</p>
+                    <small><b>₹80.00   </b><strike class="black">₹100.00</strike><b class="green">    20% off</b></small>
+                    <button class="atc" onclick="add('Metal Stapler',80,'./images/p1.png')"><b>Add to cart</b></button>
+                </div>
+                <div class="p1">
+                    <img src="./images/p2.png" alt="">
+                    <p>LUXOR Chisel Tip fluorescent Highlighter</p>
+                    <small><b>₹106.00   </b><strike class="black">₹125.00</strike><b class="green">    15% off</b></small>
+                    <button class="atc" onclick="add('Highlighter',106,'./images/p2.png')"><b>Add to cart</b></button>
+                </div>
+                <div class="p1">
+                    <img src="./images/p3.png" alt="">
+                    <p>Classmate Pulse A4 Notebook Single Line 300 Pages</p>
+                    <small><b>₹140.00   </b><strike class="black">₹175.00</strike><b class="green">    20% off</b></small>
+                    <button class="atc" onclick="add('Classmate Notebook',140,'./images/p3.png')"><b>Add to cart</b></button>
+                </div>
+                <div class="p1">
+                    <img src="./images/p4.png" alt="">
+                    <p>Classmate Mathematical Drawing Instruments</p>
+                    <small><b>₹91.00   </b><strike class="black">₹110.00</strike><b class="green">    17% off</b></small>
+                    <button class="atc" onclick="add('Classmate Mathematical Instruments',91,'./images/p4.png')"><b>Add to cart</b></button>
+                </div>
+                <div class="p1">
+                    <img src="./images/p5.png" alt="">
+                    <p>DSR Glitter Foam Sheet Sparkles 2 mm Thick 10 Different Color</p>
+                    <small><b>₹199.00   </b><strike class="black">₹399.00</strike><b class="green">    50% off</b></small>
+                    <button class="atc" onclick="add('DSR Glitter Foam Sheet',199,'./images/p5.png')"><b>Add to cart</b></button>
+                </div>
+                <div class="p1">
+                    <img src="./images/p6.png" alt="">
+                    <p>DOMS Graphite Majestic pencil (10 pack) Pencil</p>
+                    <small><b>₹500.00   </b><strike class="black">₹700.00</strike><b class="green">    29% off</b></small>
+                    <button class="atc" onclick="add('DOMS Graphite Majestic Pencil',500,'./images/p6.png')"><b>Add to cart</b></button>
+                </div>
+                <div class="p1">
+                    <img src="./images/p7.png" alt="">
+                    <p>Backpack Kids Stylish Junior School Bag Backpacks Cartoon</p>
+                    <small><b>₹319.00   </b><strike class="black">₹999.00</strike><b class="green">    68% off</b></small>
+                    <button class="atc" onclick="add('Backpack Kids',319,'./images/p7.png')"><b>Add to cart</b></button>
+                </div>
+                <div class="p1">
+                    <img src="./images/p8.png" alt="">
+                    <p>DOMS Artistic Brush Zip Case Pouch  (Set of 12, Black)</p>
+                    <small><b>₹600.00   </b><strike class="black">₹750.00</strike><b class="green">    20% off</b></small>
+                    <button class="atc" onclick="add('DOMS Artistic Brush',600,'./images/p8.png')"><b>Add to cart</b></button>
+                </div>
+            </div>
+        </div>
+        <div class="brand marbtm">
+            <h1>Shop By Brand</h1>
+            <div class="pics">
+                <div class="b1">
+                    <img src="./images/b1.jpg" alt="" onclick="change('./Static/doms.html')">
+                </div>
+                <div class="b1">
+                    <img src="./images/b2.png" alt="" onclick="change('./Static/classmate.html')">
+                </div>
+                <div class="b1">
+                    <img src="./images/b2.jpg" alt="" onclick="change('./Static/fabercastell.html')">
+                </div>
+                <div class="b1">
+                    <img src="./images/b4.png" alt="" onclick="change('./Static/camlin.html')">
+                </div>
+                <div class="b1">
+                    <img src="./images/b6.jpg" alt="" onclick="change('./Static/navneet.html')">
+                </div>
+            </div>
+        </div>
+
+        <div class="hidden">
+            <img src="./images/s25.jpg" alt="">
+            <img src="./images/s23.jpg" alt="">
+            <img src="./images/s24.jpg" alt="">
+            <img src="./images/s26.jpg" alt="">
+            <img src="./images/s27.jpg" alt="">
+            <img src="./images/s28.jpg" alt="">
+        </div>
+        <div class="slider2 marbtm">
+            
+        </div>
+
+        <hr id="hr1" class="marbtm">
+        <div class="display1 marbtm" id="shop">
+            <div class="d11">
+                <h1>Desk Accessories</h1>
+                <button id="btn2" onclick="change('./Static/DA.html')">Show All</button>
+            </div>
+            <div class="d1">
+                <img src="./images/d1.png" alt="" onclick="change('./Static/DA.html#products1')">
+                <h3>Adhesives & Gluess</h3>
+                <h3 id="price">From ₹50</h3>
+            </div>
+            <div class="d1">
+                <img src="./images/d2.png" alt="" onclick="change('./Static/DA.html#products2')">
+                <h3>Calculators</h3>
+                <h3 id="price">From ₹100</h3>
+            </div>
+            <div class="d1">
+                <img src="./images/d3.png" alt="" onclick="change('./Static/DA.html#products3')">
+                <h3 id="d1p">Staplers and Weights</h3>
+                <h3 id="price">From ₹80</h3>
+            </div>
+            <div class="d1">
+                <img src="./images/d4.png" alt="" onclick="change('./Static/DA.html#products4')">
+                <h3>Miscellaneous</h3>
+                <h3 id="price">From ₹40</h3>
+            </div>
+            <div class="d1">
+                <img src="./images/d5.png" alt="" onclick="change('./Static/DA.html#products5')">
+                <h3>Extras</h3>
+                <h3 id="price">From ₹60</h3>
+            </div>
+        </div>
+        <div class="display2 marbtm">
+            <div class="d11">
+                <h1>School Supplies</h1>
+                <button id="btn2" onclick="change('./Static/SS.html')">Show All</button>
+            </div>
+            <div class="d1">
+                <img src="./images/d6.png" alt="" onclick="change('./Static/SS.html#products1')">
+                <h3>Craft Supplies</h3>
+                <h3 id="price">From ₹50</h3>
+            </div>
+            <div class="d1">
+                <img src="./images/p4.png" alt="" onclick="change('./Static/SS.html#products2')">
+                <h3>Geometry</h3>
+                <h3 id="price">From ₹100</h3>
+            </div>
+            <div class="d1">
+                <img src="./images/p7.png" alt="" onclick="change('./Static/SS.html#products3')">
+                <h3>Bags</h3>
+                <h3 id="price">From ₹380</h3>
+            </div>
+            <div class="d1">
+                <img src="./images/d7.png" alt="" onclick="change('./Static/SS.html#products4')">
+                <h3>Miscellaneous</h3>
+                <h3 id="price">From ₹40</h3>
+            </div>
+            <div class="d1">
+                <img src="./images/p3.png" alt="" onclick="change('./Static/SS.html#products5')">
+                <h3>Notebooks</h3>
+                <h3 id="price">From ₹60</h3>
+            </div>
+        </div>
+        <div class="display3 marbtm">
+            <div class="d11">
+                <h1>Notes and Books</h1>
+                <button id="btn2" onclick="change('./Static/NB.html')">Show All</button>
+            </div>
+            <div class="d1">
+                <img src="./images/l5.png" alt="" onclick="change('./Static/NB.html#products1')">
+                <h3>Mechanical</h3>
+                <h3 id="price">From ₹550</h3>
+            </div>
+            <div class="d1">
+                <img src="./images/l2.png" alt="" onclick="change('./Static/NB.html#products2')">
+                <h3>CSE</h3>
+                <h3 id="price">From ₹550</h3>
+            </div>
+            <div class="d1">
+                <img src="./images/l3.png" alt="" onclick="change('./Static/NB.html#products3')">
+                <h3>Electrical</h3>
+                <h3 id="price">From ₹500</h3>
+            </div>
+            <div class="d1">
+                <img src="./images/l1.png" alt="" onclick="change('./Static/NB.html#products4')">
+                <h3>Electronics</h3>
+                <h3 id="price">From ₹550</h3>
+            </div>
+            <div class="d1">
+                <img src="./images/l4.png" alt="" onclick="change('./Static/NB.html#products5')">
+                <h3>Civil</h3>
+                <h3 id="price">From ₹500</h3>
+            </div>
+        </div>
+        <hr id="hr2" class="marbtm">
+        <div class="feed">
+            <div class="ask">
+                <h3 id="a1">Didn't find the product here?</h3>
+                <h1 id="a2">Suggest it & we will Source it for you</h1>
+                <button><a href=".//Static/contact.html#form">Click Here</a></button>
+            </div>
+        </div>
+        <footer class="footer" id="aboutus">
+            <div class="container">
+                <div class="row">
+                    <div class="footer-col">
+                        <h4>company</h4>
+                        <ul>
+                            <li><a href="#">About us</a></li>
+                            <li><a href="#">Our services</a></li>
+                            <li><a href="#">Privacy policy</a></li>
+                            <li><a href="#">Programs</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Get help</h4>
+                        <ul>
+                            <li><a href="#">FAQ</a></li>
+                            <li><a href="#">Shipping</a></li>
+                            <li><a href="#">Returns</a></li>
+                            <li><a href="#">Order status</a></li>
+                            <li><a href="#">Payment options</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Online Shop</h4>
+                        <ul>
+                            <li><a href="#">Pen/Pencil</a></li>
+                            <li><a href="#">Bag</a></li>
+                            <li><a href="#">Books</a></li>
+                            <li><a href="#">Others</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4 id="fh">Follow us</h4>
+                        <div class="social-links">
+                            <a href="#"><i class="fab fa-facebook"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-linkedin"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+<script src="index.js"></script>
+</html>
