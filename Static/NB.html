@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Notes & Books</title>
+        <link rel="icon" href="../images/web_icon.png">
+        <link rel="stylesheet" href="NB.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Gabriela&family=Ubuntu&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div class="home">
+            <nav class="nav">
+                <ul>
+                    <li><img src="../images/logo.png" alt="" onclick="change('../index.html')"></li>
+                    <li class="navi"><a href="../index.html">Home</a></li>
+                    <li class="navi"><a href="">Sell Product</a></li>
+                    <li class="navi"><a href="">Shop</a></li>
+                    <li class="navi"><a href="">About Us</a></li>
+                    <li class="navi"><a href="">Contact Us</a></li>
+                    <li class="navi"><a id="i_cart" href="../Static/cart.html" target="_blank"><i class="fa fa-shopping-cart"></i></a></li>
+                    <p id="tot">0</p>
+                </ul>
+            </nav>
+            <div class="products1 margin-l" id="products1">
+                <div class="section">
+                    <div class="p1">
+                        <img src="../images/n1.png" alt="">
+                        <p>Physics</p>
+                        <small><b>₹800.00   </b></small>
+                        <button class="atc" onclick="add('Physics',800,'./images/n1.png')"><b>Add to cart</b></button>
+                    </div>
+                    <div class="p1">
+                        <img src="../images/n2.png" alt="">
+                        <p>Calculus</p>
+                        <small><b>₹600.00   </b></small>
+                        <button class="atc" onclick="add('Calculus',600,'./images/n2.png')"><b>Add to cart</b></button>
+                    </div>
+                    <div class="p1">
+                        <img src="../images/n3.png" alt="">
+                        <p>Themodynamics</p>
+                        <small><b>₹550.00   </b></small>
+                        <button class="atc" onclick="add('Themodynamics',550,'./images/n3.png')"><b>Add to cart</b></button>
+                    </div>
+                    <div class="p1">
+                        <img src="../images/n4.png" alt="">
+                        <p>Kinetic Theory</p>
+                        <small><b>₹600.00   </b></small>
+                        <button class="atc" onclick="add('Kinetic Theory',600,'./images/n4.png')"><b>Add to cart</b></button>
+                    </div>
+                    <div class="p1">
+                        <img src="../images/n5.png" alt="">
+                        <p>Fluid Mechanics</p>
+                        <small><b>₹650.00   </b></small>
+                        <button class="atc" onclick="add('Fluid Mechanics',650,'./images/n5.png')"><b>Add to cart</b></button>
+                    </div>
+                </div>
+            </div>
+            <div class="products2 margin-l" id="products2">
+                <div class="section">
+                    <div class="p1">
+                        <img src="../images/n6.png" alt="">
+                        <p>Data Structures</p>
+                        <small><b>₹550.00   </b></small>
+                        <button class="atc" onclick="add('Data Structures',550,'./images/n6.png')"><b>Add to cart</b></button>
+                    </div>
+                    <div class="p1">
+                        <img src="../images/n7.png" alt="">
+                        <p>Object Oriented</p>
+                        <small><b>₹750.00   </b></small>
+                        <button class="atc" onclick="add('Object Oriented',750,'./images/n7.png')"><b>Add to cart</b></button>
+                    </div>
+                    <div class="p1">
+                        <img src="../images/n8.png" alt="">
+                        <p>Web Development</p>
+                        <small><b>₹600.00   </b></small>
+                        <button class="atc" onclick="add('Web Development',600,'./images/n8.png')"><b>Add to cart</b></button>
+                    </div>
+                    <div class="p1">
+                        <img src="../images/n9.png" alt="">
+                        <p>AI and ML</p>
+                        <small><b>₹650.00   </b></small>
+                        <button class="atc" onclick="add('AI and ML',650,'./images/n9.png')"><b>Add to cart</b></button>
+                    </div>
+                    <div class="p1">
+                        <img src="../images/n10.png" alt="">
+                        <p>Blockchain</p>
+                        <small><b>₹620.00   </b></small>
+                        <button class="atc" onclick="add('Blockchain',620,'./images/n10.png')"><b>Add to cart</b></button>
+                    </div>
+                </div>
+            </div>
+            <div class="products3 margin-l" id="products3">
+                <div class="section">
+                    <div class="p1">
+                        <img src="../images/n11.png" alt="">
+                        <p>Digital Electronics</p>
+                        <small><b>₹500.00   </b></small>
+                        <button class="atc" onclick="add('Digital Electronics',500,'./images/n11.png')"><b>Add to cart</b></button>
+                    </div>
+                    <div class="p1">
+                        <img src="../images/n13.png" alt="">
+                        <p>System and Signals</p>
+                        <small><b>₹610.00   </b></small>
+                        <button class="atc" onclick="add('System and Signals',610,'./images/n13.png')"><b>Add to cart</b></button>
+                    </div>
+                    <div class="p1">
+                        <img src="../images/n12.png" alt="">
+                        <p>Electromagnatism</p>
+                        <small><b>₹550.00   </b></small>
+                        <button class="atc" onclick="add('Electromagnatism',550,'./images/n12.png')"><b>Add to cart</b></button>
+                    </div>
+                    <div class="p1">
+                        <img src="../images/n14.png" alt="">
+                        <p>Computer Networks</p>
+                        <small><b>₹600.00   </b></small>
+                        <button class="atc" onclick="add('Computer Networks',600,'./images/n14.png')"><b>Add to cart</b></button>
+                    </div>
+                    <div class="p1">
+                        <img src="../images/n15.png" alt="">
+                        <p>Instrumentation</p>
+                        <small><b>₹580.00   </b></small>
+                        <button class="atc" onclick="add('Instrumentation',580,'./images/n15.png')"><b>Add to cart</b></button>
+                    </div>
+                </div>
+            </div>
+            <div class="products4 margin-l" id="products4">
+                <div class="section">
+                    <div class="p1">
+                        <img src="../images/n16.png" alt="">
+                        <p>Geotechnical</p>
+                        <small><b>₹650.00   </b></small>
+                        <button class="atc" onclick="add('Geotechnical',650,'./images/n16.png')"><b>Add to cart</b></button>
+                    </div>
+                    <div class="p1">
+                        <img src="../images/n17.png" alt="">
+                        <p>Engineering Drawing</p>
+                        <small><b>₹750.00   </b></small>
+                        <button class="atc" onclick="add('Engineering Drawing',750,'./images/n17.png')"><b>Add to cart</b></button>
+                    </div>
+                    <div class="p1">
+                        <img src="../images/n18.png" alt="">
+                        <p>Foundation Engineering</p>
+                        <small><b>₹550.00   </b></small>
+                        <button class="atc" onclick="add('Foundation Engineering',550,'./images/n18.png')"><b>Add to cart</b></button>
+                    </div>
+                    <div class="p1">
+                        <img src="../images/n19.png" alt="">
+                        <p>Hydraulic Structures</p>
+                        <small><b>₹550.00   </b></small>
+                        <button class="atc" onclick="add('Hydraulic Structures',45,'./images/n19.png')"><b>Add to cart</b></button>
+                    </div>
+                    <div class="p1">
+                        <img src="../images/n20.png" alt="">
+                        <p>Building Material</p>
+                        <small><b>₹600.00   </b></small>
+                        <button class="atc" onclick="add('Building Material',600,'./images/n20.png')"><b>Add to cart</b></button>
+                    </div>
+                </div>
+            </div>
+            <div class="products5 margin-l" id="products5">
+                <div class="section">
+                    <div class="p1">
+                        <img src="../images/n21.png" alt="">
+                        <p>Signals Processing</p>
+                        <small><b>₹550.00   </b></small>
+                        <button class="atc" onclick="add('Signals Processing',550,'./images/n21.png')"><b>Add to cart</b></button>
+                    </div>
+                    <div class="p1">
+                        <img src="../images/n22.png" alt="">
+                        <p>Embedded Systems</p>
+                        <small><b>₹750.00   </b></small>
+                        <button class="atc" onclick="add('Embedded Systems',750,'./images/n22.png')"><b>Add to cart</b></button>
+                    </div>
+                    <div class="p1">
+                        <img src="../images/n23.png" alt="">
+                        <p>Control Systems</p>
+                        <small><b>₹650.00   </b></small>
+                        <button class="atc" onclick="add('Control Systems',650,'./images/n23.png')"><b>Add to cart</b></button>
+                    </div>
+                    <div class="p1">
+                        <img src="../images/n24.png" alt="">
+                        <p>Microprocessor</p>
+                        <small><b>₹600.00   </b></small>
+                        <button class="atc" onclick="add('Microprocessor',600,'./images/n24.png')"><b>Add to cart</b></button>
+                    </div>
+                    <div class="p1">
+                        <img src="../images/n25.png" alt="">
+                        <p>Electronic Components</p>
+                        <small><b>₹500.00   </b></small>
+                        <button class="atc" onclick="add('Electronic Components',500,'./images/n25.png')"><b>Add to cart</b></button>
+                    </div>
+                </div>
+            </div>
+
+            <footer class="footer" id="aboutus">
+                <div class="container">
+                    <div class="row">
+                        <div class="footer-col">
+                            <h4>company</h4>
+                            <ul>
+                                <li><a href="#">About us</a></li>
+                                <li><a href="#">Our services</a></li>
+                                <li><a href="#">Privacy policy</a></li>
+                                <li><a href="#">Programs</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer-col">
+                            <h4>Get help</h4>
+                            <ul>
+                                <li><a href="#">FAQ</a></li>
+                                <li><a href="#">Shipping</a></li>
+                                <li><a href="#">Returns</a></li>
+                                <li><a href="#">Order status</a></li>
+                                <li><a href="#">Payment options</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer-col">
+                            <h4>Online Shop</h4>
+                            <ul>
+                                <li><a href="#">Pen/Pencil</a></li>
+                                <li><a href="#">Bag</a></li>
+                                <li><a href="#">Books</a></li>
+                                <li><a href="#">Others</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer-col">
+                            <h4 id="fh">Follow us</h4>
+                            <div class="social-links">
+                                <a href="#"><i class="fab fa-facebook"></i></a>
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                                <a href="#"><i class="fab fa-instagram"></i></a>
+                                <a href="#"><i class="fab fa-linkedin"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </body>
+    <script src="../index.js"></script>
+</html>

@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="icon" href="../images/web_icon.png">
+    <style>
+        html{
+            font-family: cursive;
+        }
+        body{
+            height: 100vh;
+            display: flex;
+            justify-content:space-around;
+            flex-direction: row-reverse;
+            align-items: center;
+            background:url('../images/img-l3.jpg');
+            background-size:cover;
+            overflow: hidden;
+        }
+        
+        #container{
+            border: 3px solid rgb(0, 0, 0);
+            background-color: rgba(0, 0, 0, 0.408);
+            border-radius: 10px;
+            width: 30vw;
+            height: 70vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+        .stext{
+            height: 25px;
+            width: 150px;
+            border-radius:20px;
+            background-color: rgba(26, 26, 26, 0.641);
+            color: aliceblue;
+            padding: 6px;
+        }
+        #tarea{
+            width: 20vw;
+            height: 10vh;
+            border-radius: 5px;
+            padding:8px;
+            background-color: rgba(26, 26, 26, 0.641);
+            color: aliceblue;
+        }
+        #image-area{
+            color: aliceblue;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 150px;
+            width: 200px;
+            font-family: monospace;
+            text-align: center;
+            background-color: rgba(26, 26, 26, 0.641);
+            border: 1px solid black;
+        }
+        .btn{
+            height: 30px;
+            width: 60px;
+            background-color: rgba(26, 26, 26, 0.641);
+            color: rgb(255, 255, 255);
+            border-radius: 5px;
+        }
+        #s-container{
+            height: 30vh;
+            width: 20vw;
+            background-color: rgba(11, 11, 11, 0.677);
+            color: rgb(255, 255, 255);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 10px;
+            border-radius: 60px;
+            border: 3px solid rgb(0, 0, 0);
+        }
+    </style>
+</head>
+<body>
+    <div id="s-container">
+        <h2 style="color:tan;">Sell Product Rules</h2>
+        <p>
+            <ol>
+                <li>Products should be stationary oriented</li>
+                <li>Mention in specifications if any damages are done</li>
+                <li>Products may be returned with a charge if conditions are not met.</li>
+            </ol>
+        </p>
+    </div>
+    <div id="container">
+        <div>
+            <label for="pname">Product Name :</label>
+            <input class="stext" type="text" name="pname" id="pname" required>
+        </div>
+        <div>
+            <label for="price">Price (in INR) :</label>
+            <input class="stext" type="number" name="price" id="pprice" required>
+        </div>
+        <div>
+            <label for="email">Email :</label>
+            <input class="stext" type="email" name="email" id="email" placeholder="xyz@gmail.com" required>
+        </div>
+        <div>
+            <label for="insertImg">(img)</label>
+            <input type="file" name="insertImg" id="inpFile" required>
+        </div>
+        <div id="image-area">
+            <img src="../images/icon1.png" id="image-preview" width="155px" >
+        </div>
+        <div>
+            <textarea type="text" id="tarea" placeholder="Write product specification ...." required></textarea>
+        </div>
+        <div>
+            <button class="btn" id="rHome" onclick="home()">Home</button>
+            <button class="btn" id="submit" onclick="submit()">Submit</button>
+        </div>
+    </div>
+</body>
+<script src="https://smtpjs.com/v3/smtp.js"></script>
+<script>
+    let s=""
+    const inpFile = document .getElementById("inpFile")
+    const previewImage = document.getElementById("image-preview")
+    inpFile.addEventListener("change",function(){
+        const file = this.files[0];
+
+        if(file){
+            const reader = new FileReader()
+            reader.addEventListener("load",function(){
+                console.log(this)
+                previewImage.setAttribute("src",this.result)
+                s=this.result
+            });
+            reader.readAsDataURL(file);
+        }
+    });
+    function home(){
+        window.location.href="../index.html"
+    }
+
+    function submit(){
+        const name=document.getElementById("pname").value
+        const price=document.getElementById("pprice").value
+        const email=document.getElementById("email").value
+        const spec=document.getElementById("tarea").value
+        
+        console.log(email)
+
+        Email.send({
+            Host : "smtp.elasticemail.com",
+            Username : "naman191j@gmail.com",
+            Password : "0F9CE73CA7FBDE13D9DFFE731A673B6FA8C2",
+            To : email,
+            From : "naman191j@gmail.com",
+            Subject : "Regarding Product Selling",
+            Body : `Your product <b>${name}</b> has been taken into consideration. <br> You will soon receive a mail regarding your product passed or not.`
+        }).then(
+        message => alert('Sent...')
+        );
+
+        Email.send({
+            Host : "smtp.elasticemail.com",
+            Username : "naman191j@gmail.com",
+            Password : "0F9CE73CA7FBDE13D9DFFE731A673B6FA8C2",
+            To : "21bcm041@nirmauni.ac.in",
+            From : "naman191j@gmail.com",
+            Subject : "Regarding Product Selling",
+            Body : `Name : ${name} <br> Email : ${email} <br> Price : ${price} <br> Specification : ${spec}`
+        }).then(
+        message => alert('Sent...')
+        );
+    }
+</script>
+</html>

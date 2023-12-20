@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Desk Accessories</title>
+        <link rel="icon" href="../images/web_icon.png">
+        <link rel="stylesheet" href="DA.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Gabriela&family=Ubuntu&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div class="home">
+            <nav class="nav">
+                <ul>
+                    <li><img src="../images/logo.png" alt="" onclick="change('../index.html')"></li>
+                    <li class="navi"><a href="../index.html">Home</a></li>
+                    <li class="navi"><a href="">Sell Product</a></li>
+                    <li class="navi"><a href="">Shop</a></li>
+                    <li class="navi"><a href="">About Us</a></li>
+                    <li class="navi"><a href="">Contact Us</a></li>
+                    <li class="navi"><a id="i_cart" href="../Static/cart.html" target="_blank"><i class="fa fa-shopping-cart"></i></a></li>
+                    <p id="tot">0</p>
+                </ul>
+            </nav>
+            <div class="products1 margin-l" id="products1">
+                <div class="section">
+                    <div class="p1">
+                        <img src="../images/a1.png" alt="">
+                        <p>Pidilite Fevistik Glue Stick</p>
+                        <small><b>₹39.00   </b></small>
+                        <button class="atc" onclick="add('Pidilite Fevistik',39,'./images/a1.png')"><b>Add to cart</b></button>
+                    </div>
+                    <div class="p1">
+                        <img src="../images/a2.png" alt="">
+                        <p>Little Birdie Silicon Liquid Glue 50 ML</p>
+                        <small><b>₹150.00   </b><strike class="black">₹200.00</strike><b class="green">    25% off</b></small>
+                        <button class="atc" onclick="add('Silicon Liquid Glue',150,'./images/a2.png')"><b>Add to cart</b></button>
+                    </div>
+                    <div class="p1">
+                        <img src="../images/a3.png" alt="">
+                        <p>Feviquick 5mg</p>
+                        <small><b>₹5.00   </b></small>
+                        <button class="atc" onclick="add('Feviquick 5mg',5,'./images/a3.png')"><b>Add to cart</b></button>
+                    </div>
+                    <div class="p1">
+                        <img src="../images/a4.png" alt="">
+                        <p>Cello Tape 0.5 inch</p>
+                        <small><b>₹10.00   </b></small>
+                        <button class="atc" onclick="add('Cello Tape',10,'./images/a4.png')"><b>Add to cart</b></button>
+                    </div>
+                    <div class="p1">
+                        <img src="../images/a5.png" alt="">
+                        <p>Fevicol 150gm</p>
+                        <small><b>₹160.00   </b><strike class="black">₹200.00</strike><b class="green">    20% off</b></small>
+                        <button class="atc" onclick="add('Fevicol',160,'./images/a5.png')"><b>Add to cart</b></button>
+                    </div>
+                    <div class="p1">
+                        <img src="../images/a6.png" alt="">
+                        <p>Double Sided Tape</p>
+                        <small><b>₹49.00   </b></small>
+                        <button class="atc" onclick="add('Double Sided Tape',49,'./images/a6.png')"><b>Add to cart</b></button>
+                    </div>
+                    <div class="p1">
+                        <img src="../images/a7.png" alt="">
+                        <p>Pidilite Gum drops (432 drops)</p>
+                        <small><b>₹350.00   </b><strike class="black">₹500s.00</strike><b class="green">    30% off</b></small>
+                        <button class="atc" onclick="add('Pidilite Gum drops',350,'./images/a7.png')"><b>Add to cart</b></button>
+                    </div>
+                </div>
+            </div>
+            <div class="products2 margin-l" id="products2">
+                <div class="section">
+                    <div class="p1">
+                        <img src="../images/a8.png" alt="">
+                        <p>ORPAT Desktop Calculator OT-1111</p>
+                        <small><b>₹500.00   </b><strike class="black">₹600.00</strike><b class="green">    16% off</b></small>
+                        <button class="atc" onclick="add('ORPAT Desktop Calculator',500,'./images/a8.png')"><b>Add to cart</b></button>
+                    </div>
+                    <div class="p1">
+                        <img src="../images/a9.png" alt="">
+                        <p>ORPAT Scientific Calculator SC-401 MS</p>
+                        <small><b>₹620.00   </b><strike class="black">₹780.00</strike><b class="green">    20% off</b></small>
+                        <button class="atc" onclick="add('ORPAT Scientific Calculator',620,'./images/a9.png')"><b>Add to cart</b></button>
+                    </div>
+                    <div class="p1">
+                        <img src="../images/a10.png" alt="">
+                        <p>ORPAT Basic Calculator DC-1810 555</p>
+                        <small><b>₹250.00   </b><strike class="black">₹300.00</strike><b class="green">    16% off</b></small>
+                        <button class="atc" onclick="add('ORPAT Basic Calculator',250,'./images/a10.png')"><b>Add to cart</b></button>
+                    </div>
+                    <div class="p1">
+                        <img src="../images/a11.png" alt="">
+                        <p>Casio Fx-82Ms 2-Line Display Scientific Calculator</p>
+                        <small><b>₹425.00   </b><strike class="black">₹530.00</strike><b class="green">    19% off</b></small>
+                        <button class="atc" onclick="add('Casio Fx-82Ms Scientific Calculator',425,'./images/a11.png')"><b>Add to cart</b></button>
+                    </div>
+                    <div class="p1">
+                        <p>-</p>
+                    </div>
+                    <div class="p1">
+                        <p>-</p>
+                    </div>
+                    <div class="p1">
+                        <p>-</p>
+                    </div>
+                </div>
+            </div>
+            <div class="products3 margin-l" id="products3">
+                <div class="section">
+                    <div class="p1">
+                        <img src="../images/a12.png" alt="">
+                        <p>Punch 280 (pack of 2)</p>
+                        <small><b>₹120.00   </b><strike class="black">₹150.00</strike><b class="green">    20% off</b></small>
+                        <button class="atc" onclick="add('Punch 280 (pack of 2)',120,'./images/a12.png')"><b>Add to cart</b></button>
+                    </div>
+                    <div class="p1">
+                        <img src="../images/a13.png" alt="">
+                        <p>Punch 800</p>
+                        <small><b>₹800.00   </b><strike class="black">₹900.00</strike><b class="green">    11% off</b></small>
+                        <button class="atc" onclick="add('Punch 800',800,'./images/a13.png')"><b>Add to cart</b></button>
+                    </div>
+                    <div class="p1">
+                        <img src="../images/p1.png" alt="">
+                        <p>Kangaro Desk Essentials Metal Stapler</p>
+                        <small><b>₹80.00   </b><strike class="black">₹100.00</strike><b class="green">    20% off</b></small>
+                        <button class="atc" onclick="add('Metal Stapler',80,'./images/p1.png')"><b>Add to cart</b></button>
+                    </div>
+                    <div class="p1">
+                        <img src="../images/a14.png" alt="">
+                        <p>Kangaro Stapler Pack with Staple Pins</p>
+                        <small><b>₹91.00   </b><strike class="black">₹110.00</strike><b class="green">    17% off</b></small>
+                        <button class="atc" onclick="add('Kangaro Stapler Pack',91,'./images/a14.png')"><b>Add to cart</b></button>
+                    </div>
+                    <div class="p1">
+                        <img src="../images/a15.png" alt="">
+                        <p>Kokuyo Stapler, Join Pieces of Paper without Making Holes</p>
+                        <small><b>₹1100.00   </b><strike class="black">₹1450.00</strike><b class="green">    25% off</b></small>
+                        <button class="atc" onclick="add('Kokuyo No Hole Stapler',1100,'./images/a15.png')"><b>Add to cart</b></button>
+                    </div>
+                    <div class="p1">
+                        <img src="../images/a61.png" alt="">
+                        <p>Concave Paper Weight</p>
+                        <small><b>₹250.00   </b><strike class="black">₹450.00</strike><b class="green">    44% off</b></small>
+                        <button class="atc" onclick="add('Concave Paper Weight',250,'./images/a61.png')"><b>Add to cart</b></button>
+                    </div>
+                    <div class="p1">
+                        <img src="../images/a62.png" alt="">
+                        <p>Origami Camel Decorative Paper Weight</p>
+                        <small><b>₹300.00   </b><strike class="black">₹500.00</strike><b class="green">    40% off</b></small>
+                        <button class="atc" onclick="add('Origami Camel Decorative Paper Weight',300,'./images/a62.png')"><b>Add to cart</b></button>
+                    </div>
+                </div>
+            </div>
+            <div class="products4 margin-l" id="products4">
+                <div class="section">
+                    <div class="p1">
+                        <img src="../images/a16.png" alt="">
+                        <p>Globus Globe 505</p>
+                        <small><b>₹154.00   </b><strike class="black">₹180.00</strike><b class="green">    14% off</b></small>
+                        <button class="atc" onclick="add('Globus Globe 505',154,'./images/a16.png')"><b>Add to cart</b></button>
+                    </div>
+                    <div class="p1">
+                        <img src="../images/a17.png" alt="">
+                        <p>Laptop Cleaning Kit</p>
+                        <small><b>₹160.00   </b><strike class="black">₹210.00</strike><b class="green">    24% off</b></small>
+                        <button class="atc" onclick="add('Laptop Cleaning Kit',160,'./images/a17.png')"><b>Add to cart</b></button>
+                    </div>
+                    <div class="p1">
+                        <img src="../images/a18.png" alt="">
+                        <p>Laptop Stand</p>
+                        <small><b>₹300.00   </b><strike class="black">₹360.00</strike><b class="green">    16% off</b></small>
+                        <button class="atc" onclick="add('Laptop Stand',1100,'./images/a18.png')"><b>Add to cart</b></button>
+                    </div>
+                    <div class="p1">
+                        <img src="../images/a19.png" alt="">
+                        <p>Oddy T-pins for boards - 5 packs</p>
+                        <small><b>₹150.00   </b><strike class="black">₹205.00</strike><b class="green">    27% off</b></small>
+                        <button class="atc" onclick="add('T-pins for boards - 5 packs',150,'./images/a19.png')"><b>Add to cart</b></button>
+                    </div>
+                    <div class="p1">
+                        <img src="../images/a20.png" alt="">
+                        <p>Luxor White Board Marker (5 Different Color)</p>
+                        <small><b>₹250.00   </b><strike class="black">₹300.00</strike><b class="green">    16% off</b></small>
+                        <button class="atc" onclick="add('White Board Marker (5 Different Color)',250,'./images/a20.png')"><b>Add to cart</b></button>
+                    </div>
+                    <div class="p1">
+                        <img src="../images/a21.png" alt="">
+                        <p>Faber Castell Craft Scissor (4 Cuts)</p>
+                        <small><b>₹150.00   </b><strike class="black">₹200.00</strike><b class="green">    25% off</b></small>
+                        <button class="atc" onclick="add('Faber Castell Craft Scissor (4 Cuts)',150,'./images/a21.png')"><b>Add to cart</b></button>
+                    </div>
+                    <div class="p1">
+                        <img src="../images/a22.png" alt="">
+                        <p>Camlin Scissor</p>
+                        <small><b>₹90.00   </b></small>
+                        <button class="atc" onclick="add('Camlin Scissor',90,'./images/a22.png')"><b>Add to cart</b></button>
+                    </div>
+                </div>
+            </div>
+            <div class="products5 margin-l" id="products5">
+                <div class="section">
+                    <div class="p1">
+                        <img src="../images/a23.png" alt="">
+                        <p>Solo Swing clip report cover</p>
+                        <small><b>₹150.00   </b><strike class="black">₹180.00/</strike><b class="green">    16% off</b></small>
+                        <button class="atc" onclick="add('Solo Swing clip report cover',150,'./images/a23.png')"><b>Add to cart</b></button>
+                    </div>
+                    <div class="p1">
+                        <img src="../images/a24.png" alt="">
+                        <p>Punchless File with Lever Clip</p>
+                        <small><b>₹90.00  </b><strike class="black">₹100.00</strike><b class="green">    10% off</b></small>
+                        <button class="atc" onclick="add('Punchless File',90,'./images/a24.png')"><b>Add to cart</b></button>
+                    </div>
+                    <div class="p1">
+                        <img src="../images/a25.png" alt="">
+                        <p>Century A4 75 GSM paper (300 sheets)</p>
+                        <small><b>₹110.00   </b><strike class="black">₹175.00</strike><b class="green">    37% off</b></small>
+                        <button class="atc" onclick="add('Century A4 Printer Paper',110,'./images/a25.png')"><b>Add to cart</b></button>
+                    </div>
+                    <div class="p1">
+                        <img src="../images/a26.png" alt="">
+                        <p>ikis 400 Sheets(3X3) Fluorescent Sticky Notes</p>
+                        <small><b>₹99.00   </b></small>
+                        <button class="atc" onclick="add('ikis 400 Sheets Sticky Notes',99,'./images/a26.png')"><b>Add to cart</b></button>
+                    </div>
+                    <div class="p1">
+                        <img src="../images/a63.png" alt="">
+                        <p>Dark Colour Chart Paper Pack of 7</p>
+                        <small><b>₹30.00   </b></small>
+                        <button class="atc" onclick="add('Dark Colour Chart Paper',30,'./images/a63.png')"><b>Add to cart</b></button>
+                    </div>
+                    <div class="p1">
+                        <img src="../images/a64.png" alt="">
+                        <p>CLASSMATE SCRAP BOOK 32 PAGES</p>
+                        <small><b>₹40.00   </b></small>
+                        <button class="atc" onclick="add('CLASSMATE SCRAP BOOK 32 PAGES',40,'./images/a64.png')"><b>Add to cart</b></button>
+                    </div>
+                    <div class="p1">
+                        <img src="../images/a65.png" alt="">
+                        <p>Doms Coloured Chalk 10 Pcs Of Chalk</p>
+                        <small><b>₹30.00   </b></small>
+                        <button class="atc" onclick="add('Doms Coloured Chalk',30,'./images/a65.png')"><b>Add to cart</b></button>
+                    </div>
+                </div>
+            </div>
+
+            <footer class="footer" id="aboutus">
+                <div class="container">
+                    <div class="row">
+                        <div class="footer-col">
+                            <h4>company</h4>
+                            <ul>
+                                <li><a href="#">About us</a></li>
+                                <li><a href="#">Our services</a></li>
+                                <li><a href="#">Privacy policy</a></li>
+                                <li><a href="#">Programs</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer-col">
+                            <h4>Get help</h4>
+                            <ul>
+                                <li><a href="#">FAQ</a></li>
+                                <li><a href="#">Shipping</a></li>
+                                <li><a href="#">Returns</a></li>
+                                <li><a href="#">Order status</a></li>
+                                <li><a href="#">Payment options</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer-col">
+                            <h4>Online Shop</h4>
+                            <ul>
+                                <li><a href="#">Pen/Pencil</a></li>
+                                <li><a href="#">Bag</a></li>
+                                <li><a href="#">Books</a></li>
+                                <li><a href="#">Others</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer-col">
+                            <h4 id="fh">Follow us</h4>
+                            <div class="social-links">
+                                <a href="#"><i class="fab fa-facebook"></i></a>
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                                <a href="#"><i class="fab fa-instagram"></i></a>
+                                <a href="#"><i class="fab fa-linkedin"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </body>
+    <script src="../index.js"></script>
+</html>

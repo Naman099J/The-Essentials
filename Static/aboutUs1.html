@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="icon" href="../images/web_icon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz@6..96&family=Lobster&display=swap" rel="stylesheet">
+    <style>
+        html{
+            font-family: 'Lobster', cursive;
+        }
+        body{
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(99.6deg, rgb(112, 128, 152) 10.6%, rgb(242, 227, 234) 32.9%, rgb(234, 202, 213) 52.7%, rgb(220, 227, 239) 72.8%, rgb(185, 205, 227) 81.1%, rgb(154, 180, 212) 102.4%);
+        }
+        .container{
+            height: 70vh;
+            width:60vw;
+            display: flex;
+            align-items: center;
+            text-align: center;
+            border: 1px solid black;
+            background-color: rgba(0, 0, 0, 0.349);
+           
+        }
+        .box{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 70vh;
+            width: 20vw;
+        }
+        .box p{
+            margin: 7px;
+            color: rgb(0, 0, 0);
+            font-size: 20px;
+        }
+        #b1{
+            flex-direction: column;
+        }
+        #b2{
+            flex-direction: column-reverse;
+        }
+        #b3{
+            flex-direction: column;
+        }
+        .ibox{
+            height: 35vh;
+            width: 20vw;
+            background-color: rgba(0, 0, 0, 0.69);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .ibox img{
+            width: 100px;
+        }
+        .btn{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 10px;
+        }
+        #btn{
+            width: fit-content;
+            font-size: 20px;
+            border-radius: 5px;
+            background: linear-gradient(99.6deg, rgb(112, 128, 152) 10.6%, rgb(242, 227, 234) 32.9%, rgb(234, 202, 213) 52.7%, rgb(220, 227, 239) 72.8%, rgb(185, 205, 227) 81.1%, rgb(154, 180, 212) 102.4%);
+            border-width: 3px;
+            border-style: inset;
+        }
+        #btn:hover{
+            border-width: 3px;
+            border-style: outset;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="home">
+        <div class="container">
+            <div id="b1" class="box">
+                <p style="font-size:24px;color:rgb(0, 14, 54);">Vast Product Selection</p>
+                <p>Explore a wide range of products in a user-friendly interface. Benefit from secure payments, quick checkout, and personalized recommendations that enhance your shopping experience.</p>
+                <div class="ibox">
+                    <img src="../images/aboutUs1.png" alt="">
+                </div>
+            </div>
+            <div id="b2" class="box">
+                <p style="font-size:24px;color:rgb(0, 14, 54);">Seamless Selling Process<p>
+                <p style="color:black;">Become a seller with ease - list second-hand products, transparent fees, seller support, and quick approval. Promote your listings effectively to reach a broader audience.</p>
+                <div class="ibox">
+                    <img src="../images/aboutUs2.png" alt="">
+                </div>
+            </div>
+            <div id="b3" class="box">
+                <p style="font-size:24px;color:rgb(0, 14, 54);">Community Trust</p>
+                <p>Join a community built on trust with user reviews, secure transactions, seller verification, and clear policies. Our responsive customer support ensures a safe experience for both buyers and sellers.</p>
+                <div class="ibox">
+                    <img src="../images/aboutUs3.png" alt="">
+                </div>
+            </div>
+        </div>    
+        <div class="btn">
+            <button id="btn" onclick="change()">Home</button>
+        </div>
+    </div>
+</body>
+<script>
+    function change(){
+        window.location.href="../index.html"
+    }
+</script>
+</html>

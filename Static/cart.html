@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart</title>
+    <link rel="icon" href="../images/web_icon.png">
+    <link rel="stylesheet" href="cart.css">
+    <!-- <script src="cart.js"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.4.0/jspdf.umd.min.js"></script>
+</head>
+<body>
+    <div class="home">
+        <nav class="nav">
+            <ul>
+                <li><img src="../images/logo.png" alt="" onclick="change('../index.html')"></li>
+                <li class="navi"><a href="../index.html">Home</a></li>
+                <li class="navi"><a href="">Sell Product</a></li>
+                <li class="navi"><a href="">Shop</a></li>
+                <li class="navi"><a href="">About Us</a></li>
+                <li class="navi"><a href="">Contact Us</a></li>
+            </ul>
+        </nav>
+        <div class="cart" id="cart">
+            <p>Total Item - <b id="c">0</b></p>
+            <p id="ptot">Total = <span id="total">₹00.00</span></p>
+            <p id="disp">Discounted Price = <span id="total1">₹00.00</span></p>
+            <p id="dis">Discount = <span id="dis1">0</span>%</p>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Sr. No.</th>
+                        <th>Display</th>
+                        <th>Product</th>
+                        <th>Price</th>
+                    </tr>
+                </thead>
+                <tbody id="p1">
+                    
+                </tbody>
+            </table>
+            <button id="buy" onclick="send()"><a>Place Order</a></button>
+            <!-- <button id="buy1" onclick="download()"><a>Download PDF</a></button> -->
+            <!-- <button id="buy1"><a href="buy.html">Confirm Order</a></button> -->
+        </div>
+    </div>
+</body>
+
+<script>
+    let r=localStorage.getItem('row')
+    let p=document.getElementById("p1")
+    p.innerHTML=r
+    let n=localStorage.getItem('num')
+
+    const c = document.getElementById('c');
+    const t = document.getElementById('total');
+    const t1 = document.getElementById('total1');
+    const dis1 = document.getElementById('dis1');
+
+    let sum=localStorage.getItem('sum')
+    let sum1=localStorage.getItem('sum1')
+    let d=localStorage.getItem('d')
+
+    c.innerHTML=n
+    t.innerHTML="₹"+sum
+    t1.innerHTML="₹"+sum1
+    dis1.innerHTML=d
+
+    function send(){
+        window.location.href="form.html"
+    }
+    function change(loc){
+        window.location.href=loc
+    }      
+</script>
+</html>

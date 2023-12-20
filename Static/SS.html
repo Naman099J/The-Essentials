@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>School Supplies</title>
+        <link rel="icon" href="../images/web_icon.png">
+        <link rel="stylesheet" href="DA.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Gabriela&family=Ubuntu&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div class="home">
+            <nav class="nav">
+                <ul>
+                    <li><img src="../images/logo.png" alt="" onclick="change('../index.html')"></li>
+                    <li class="navi"><a href="../index.html">Home</a></li>
+                    <li class="navi"><a href="">Sell Product</a></li>
+                    <li class="navi"><a href="">Shop</a></li>
+                    <li class="navi"><a href="">About Us</a></li>
+                    <li class="navi"><a href="">Contact Us</a></li>
+                    <li class="navi"><a id="i_cart" href="../Static/cart.html" target="_blank"><i class="fa fa-shopping-cart"></i></a></li>
+                    <p id="tot">0</p>
+                </ul>
+            </nav>
+            <div class="products1 margin-l" id="products1">
+                <div class="section">
+                    <div class="p1">
+                        <img src="../images/a27.png" alt="">
+                        <p>Camel water colours tubes 14 shades</p>
+                        <small><b>₹80.00   </b><strike class="black">₹100.00</strike><b class="green">    20% off</b></small>
+                        <button class="atc" onclick="add('Camel water colours tubes',80,'./images/a27.png')"><b>Add to cart</b></button>
+                    </div>
+                    <div class="p1">
+                        <img src="../images/a28.png" alt="">
+                        <p>Doms Sketch Max (Pack of 12 Shades)</p>
+                        <small><b>₹25.00   </b><strike class="black">₹35.00</strike><b class="green">    28% off</b></small>
+                        <button class="atc" onclick="add('Doms Sketch Max',25,'./images/a28.png')"><b>Add to cart</b></button>
+                    </div>
+                    <div class="p1">
+                        <img src="../images/a29.png" alt="">
+                        <p>Rangeela Tampera Colours (12 shades)</p>
+                        <small><b>₹15.00   </b></small>
+                        <button class="atc" onclick="add('Rangeela Tampera Colours',15,'./images/a29.png')"><b>Add to cart</b></button>
+                    </div>
+                    <div class="p1">
+                        <img src="../images/p8.png" alt="">
+                        <p>DOMS Artistic Brush Zip Case Pouch  (Set of 12, Black)</p>
+                        <small><b>₹600.00   </b><strike class="black">₹750.00</strike><b class="green">    20% off</b></small>
+                        <button class="atc" onclick="add('DOMS Artistic Brush',600,'./images/p8.png')"><b>Add to cart</b></button>
+                    </div>
+                    <div class="p1">
+                        <img src="../images/a30.png" alt="">
+                        <p>Misaki pencil colours 12 shades</p>
+                        <small><b>₹230.00   </b></small>
+                        <button class="atc" onclick="add('Misaki pencil colours',230,'./images/a30.png')"><b>Add to cart</b></button>
+                    </div>
+                    <div class="p1">
+                        <img src="../images/a31.png" alt="">
+                        <p>Colours Kit - 68 Pcs</p>
+                        <small><b>₹230.00   </b><strike class="black">₹280.00</strike><b class="green">    17% off</b></small>
+                        <button class="atc" onclick="add('Colours Kit - 68 Pcs',230,'./images/a31.png')"><b>Add to cart</b></button>
+                    </div>
+                    <div class="p1">
+                        <img src="../images/a32.png" alt="">
+                        <p>Painting Brush set of 7 flat brushes</p>
+                        <small><b>₹200.00   </b><strike class="black">₹299.00</strike><b class="green">    33% off</b></small>
+                        <button class="atc" onclick="add('Painting Brush set of 7',200,'./images/a32.png')"><b>Add to cart</b></button>
+                    </div>
+                </div>
+            </div>
+            <div class="products2 margin-l" id="products2">
+                <div class="section">
+                    <div class="p1">
+                        <img src="../images/a33.png" alt="">
+                        <p>Maped Essential Compass With Pencil Holder</p>
+                        <small><b>₹25.00   </b></small>
+                        <button class="atc" onclick="add('Maped Essential Compass',25,'./images/a33.png')"><b>Add to cart</b></button>
+                    </div>
+                    <div class="p1">
+                        <img src="../images/a34.png" alt="">
+                        <p>Geometry items set (4 parts)</p>
+                        <small><b>₹20.00   </b></small>
+                        <button class="atc" onclick="add('Geometry items set (4 parts)',20,'./images/a34.png')"><b>Add to cart</b></button>
+                    </div>
+                    <div class="p1">
+                        <img src="../images/a35.png" alt="">
+                        <p>Classmate Engineering Drawing Geometry Box (13 parts)</p>
+                        <small><b>₹250.00   </b><strike class="black">₹290.00</strike><b class="green">    14% off</b></small>
+                        <button class="atc" onclick="add('Classmate Engineering Drawing Geometry Box',250,'./images/a35.png')"><b>Add to cart</b></button>
+                    </div>
+                    <div class="p1">
+                        <img src="../images/a36.png" alt="">
+                        <p>EemailSuf Wooden Geometry Set</p>
+                        <small><b>₹750.00   </b><strike class="black">₹1000.00</strike><b class="green">    25% off</b></small>
+                        <button class="atc" onclick="add('EemailSuf Wooden Geometry Set',750,'./images/a36.png')"><b>Add to cart</b></button>
+                    </div>
+                    <div class="p1">
+                        <img src="../images/a37.png" alt="">
+                        <p>Faber castell Pencils - Graded 2B, 3B, 4B, 5B, 6B, HB</p>
+                        <small><b>₹40.00   </b></small>
+                        <button class="atc" onclick="add('Faber castell Pencils',40,'./images/a37.png')"><b>Add to cart</b></button>
+                    </div>
+                    <div class="p1">
+                        <img src="../images/a38.png" alt="">
+                        <p>Rolling Ruler 30 Cm</p>
+                        <small><b>₹150.00   </b><strike class="black">₹200.00</strike><b class="green">    25% off</b></small>
+                        <button class="atc" onclick="add('Rolling Ruler 30 Cm',150,'./images/a38.png')"><b>Add to cart</b></button>
+                    </div>
+                    <div class="p1">
+                        <img src="../images/a39.png" alt="">
+                        <p>DOMS Math Geometry Kit (8Pcs)</p>
+                        <small><b>₹900.00   </b><strike class="black">₹1300.00</strike><b class="green">    30% off</b></small>
+                        <button class="atc" onclick="add('DOMS Math Geometry Kit',900,'./images/a39.png')"><b>Add to cart</b></button>
+                    </div>
+                </div>
+            </div>
+            <div class="products3 margin-l" id="products3">
+                <div class="section">
+                    <div class="p1">
+                        <img src="../images/a40.png" alt="">
+                        <p>Skybags Drip 06 36 L Backpack</p>
+                        <small><b>₹1300.00   </b><strike class="black">₹1500.00</strike><b class="green">    13% off</b></small>
+                        <button class="atc" onclick="add('Skybags Drip Backpack',1300,'./images/a40.png')"><b>Add to cart</b></button>
+                    </div>
+                    <div class="p1">
+                        <img src="../images/a41.png" alt="">
+                        <p>Dezire Crafts Stylish Trendy Girls Backpack</p>
+                        <small><b>₹700.00   </b><strike class="black">₹800.00</strike><b class="green">    12% off</b></small>
+                        <button class="atc" onclick="add('Dezire Crafts Girls Backpack',700,'./images/a41.png')"><b>Add to cart</b></button>
+                    </div>
+                    <div class="p1">
+                        <img src="../images/a42.png" alt="">
+                        <p>PUMA Special School Backpack in Red</p>
+                        <small><b>₹950.00   </b><strike class="black">₹1200.00</strike><b class="green">    20% off</b></small>
+                        <button class="atc" onclick="add('PUMA Special School Backpack',950,'./images/a42.png')"><b>Add to cart</b></button>
+                    </div>
+                    <div class="p1">
+                        <img src="../images/a43.png" alt="">
+                        <p>18Lt Backpack Girls School College Bag Waterproof</p>
+                        <small><b>₹610.00   </b><strike class="black">₹850.00</strike><b class="green">    28% off</b></small>
+                        <button class="atc" onclick="add('Backpack Girls Waterproof',610,'./images/a43.png')"><b>Add to cart</b></button>
+                    </div>
+                    <div class="p1">
+                        <img src="../images/a44.png" alt="">
+                        <p>TASLAR Luminous Geometric Girls Bag</p>
+                        <small><b>₹1450.00   </b><strike class="black">₹1870.00</strike><b class="green">    22% off</b></small>
+                        <button class="atc" onclick="add('TASLAR Luminous Geometric Girls Bag',1450,'./images/a44.png')"><b>Add to cart</b></button>
+                    </div>
+                    <div class="p1">
+                        <img src="../images/a45.png" alt="">
+                        <p>Sabuz Side Waterproof Bag</p>
+                        <small><b>₹650.00   </b><strike class="black">₹800.00</strike><b class="green">    18% off</b></small>
+                        <button class="atc" onclick="add('Sabuz Side Waterproof Bag',650,'./images/a45.png')"><b>Add to cart</b></button>
+                    </div>
+                    <div class="p1">
+                        <img src="../images/a46.png" alt="">
+                        <p>Skybags Voxel 22Lt Backpack Blue</p>
+                        <small><b>₹710.00   </b><strike class="black">₹1000.00</strike><b class="green">    29% off</b></small>
+                        <button class="atc" onclick="add('Skybags Voxel Backpack',710,'./images/a46.png')"><b>Add to cart</b></button>
+                    </div>
+                </div>
+            </div>
+            <div class="products4 margin-l" id="products4">
+                <div class="section">
+                    <div class="p1">
+                        <img src="../images/a47.png" alt="">
+                        <p>Cello Butterflow Ball Pen (8 Pieces)</p>
+                        <small><b>₹60.00   </b></small>
+                        <button class="atc" onclick="add('Cello Butterflow Ball Pen (8 Pieces)',60,'./images/a47.png')"><b>Add to cart</b></button>
+                    </div>
+                    <div class="p1">
+                        <img src="../images/a48.png" alt="">
+                        <p>Omega Rotary Sharpener</p>
+                        <small><b>₹360.00   </b><strike class="black">₹500.00</strike><b class="green">    28% off</b></small>
+                        <button class="atc" onclick="add('Omega Rotary Sharpener',360,'./images/a48.png')"><b>Add to cart</b></button>
+                    </div>
+                    <div class="p1">
+                        <img src="../images/a49.png" alt="">
+                        <p>DOMS Multicolored Anti-Rust Pencil Sharpeners (5 Pieces)</p>
+                        <small><b>₹10.00   </b></small>
+                        <button class="atc" onclick="add('DOMS Multicolored Sharpeners (5 Pieces)',10,'./images/a49.png')"><b>Add to cart</b></button>
+                    </div>
+                    <div class="p1">
+                        <img src="../images/a50.png" alt="">
+                        <p>Apsara Non Dust Eraser (5 Pieces)</p>
+                        <small><b>₹45.00   </b></small>
+                        <button class="atc" onclick="add('Apsara Non Dust Eraser',45,'./images/a50.png')"><b>Add to cart</b></button>
+                    </div>
+                    <div class="p1">
+                        <img src="../images/a51.png" alt="">
+                        <p>Doms Neon Hexagonal Eraser with Plastic Box - Pack of 5</p>
+                        <small><b>₹75.00   </b></small>
+                        <button class="atc" onclick="add('Doms Neon Hexagonal Eraser',75,'./images/a51.png')"><b>Add to cart</b></button>
+                    </div>
+                    <div class="p1">
+                        <img src="../images/a52.png" alt="">
+                        <p>Apsara Absolute Pencils</p>
+                        <small><b>₹45.00   </b></small>
+                        <button class="atc" onclick="add('Apsara Absolute Pencils',45,'./images/a52.png')"><b>Add to cart</b></button>
+                    </div>
+                    <div class="p1">
+                        <img src="../images/a53.png" alt="">
+                        <p>Camlin 1 Correction Tape + 1 Pen 5 Mm Correction Pen</p>
+                        <small><b>₹70.00   </b><strike class="black">₹100.00</strike><b class="green">    30% off</b></small>
+                        <button class="atc" onclick="add('Camlin 1 Correction Tape + 1 Pen Correction Pen',70,'./images/a53.png')"><b>Add to cart</b></button>
+                    </div>
+                </div>
+            </div>
+            <div class="products5 margin-l" id="products5">
+                <div class="section">
+                    <div class="p1">
+                        <img src="../images/a54.png" alt="">
+                        <p>Classmate Pulse 6 Subject Notebook</p>
+                        <small><b>₹110.00   </b><strike class="black">₹140.00</strike><b class="green">    11% off</b></small>
+                        <button class="atc" onclick="add('Classmate Pulse 6 Subject Notebook',110,'./images/a54.png')"><b>Add to cart</b></button>
+                    </div>
+                    <div class="p1">
+                        <img src="../images/a55.png" alt="">
+                        <p>Clasmate 240 Page Pack Of 5</p>
+                        <small><b>₹350.00   </b><strike class="black">₹400.00</strike><b class="green">    12% off</b></small>
+                        <button class="atc" onclick="add('Clasmate 240 Page Pack Of 5',350,'./images/a55.png')"><b>Add to cart</b></button>
+                    </div>
+                    <div class="p1">
+                        <img src="../images/a56.png" alt="">
+                        <p>Youva | Spiral Long Book</p>
+                        <small><b>₹150.00   </b><strike class="black">₹175.00</strike><b class="green">    14% off</b></small>
+                        <button class="atc" onclick="add('Youva | Spiral Long Book',150,'./images/a56.png')"><b>Add to cart</b></button>
+                    </div>
+                    <div class="p1">
+                        <img src="../images/a57.png" alt="">
+                        <p>Printhubs A5 Spiral Drawing Book 100 Pages</p>
+                        <small><b>₹120.00   </b><strike class="black">₹170.00</strike><b class="green">    29% off</b></small>
+                        <button class="atc" onclick="add('Printhubs A5 Spiral Drawing Book 100 Pages',120,'./images/a57.png')"><b>Add to cart</b></button>
+                    </div>
+                    <div class="p1">
+                        <img src="../images/a58.png" alt="">
+                        <p>DOMS RAINBOW NOTEBOOK (3 Pieces)</p>
+                        <small><b>₹330.00   </b><strike class="black">₹500.00</strike><b class="green">    34% off</b></small>
+                        <button class="atc" onclick="add('DOMS RAINBOW NOTEBOOK (3 Pieces)',330,'./images/a58.png')"><b>Add to cart</b></button>
+                    </div>
+                    <div class="p1">
+                        <img src="../images/a59.png" alt="">
+                        <p>Rough Notebook King (College) Size</p>
+                        <small><b>₹40.00   </b></small>
+                        <button class="atc" onclick="add('Rough Notebook King (College) Size',40,'./images/a59.png')"><b>Add to cart</b></button>
+                    </div>
+                    <div class="p1">
+                        <img src="../images/a60.png" alt="">
+                        <p>Tinywalk Combo Pack of 4 Notebook For Girls</p>
+                        <small><b>₹360.00   </b><strike class="black">₹500.00</strike><b class="green">    28% off</b></small>
+                        <button class="atc" onclick="add('Tinywalk Combo Pack of 4 Notebook',360,'./images/a60.png')"><b>Add to cart</b></button>
+                    </div>
+                </div>
+            </div>
+
+            <footer class="footer" id="aboutus">
+                <div class="container">
+                    <div class="row">
+                        <div class="footer-col">
+                            <h4>company</h4>
+                            <ul>
+                                <li><a href="#">About us</a></li>
+                                <li><a href="#">Our services</a></li>
+                                <li><a href="#">Privacy policy</a></li>
+                                <li><a href="#">Programs</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer-col">
+                            <h4>Get help</h4>
+                            <ul>
+                                <li><a href="#">FAQ</a></li>
+                                <li><a href="#">Shipping</a></li>
+                                <li><a href="#">Returns</a></li>
+                                <li><a href="#">Order status</a></li>
+                                <li><a href="#">Payment options</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer-col">
+                            <h4>Online Shop</h4>
+                            <ul>
+                                <li><a href="#">Pen/Pencil</a></li>
+                                <li><a href="#">Bag</a></li>
+                                <li><a href="#">Books</a></li>
+                                <li><a href="#">Others</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer-col">
+                            <h4 id="fh">Follow us</h4>
+                            <div class="social-links">
+                                <a href="#"><i class="fab fa-facebook"></i></a>
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                                <a href="#"><i class="fab fa-instagram"></i></a>
+                                <a href="#"><i class="fab fa-linkedin"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </body>
+    <script src="../index.js"></script>
+</html>

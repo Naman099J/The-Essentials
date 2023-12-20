@@ -1,0 +1,252 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Ubuntu', sans-serif;
+}
+.nav{
+    grid-area: nav;
+    background-color: rgb(145 163 200);
+    border-bottom: 3px solid black;
+    width: 100%;
+    /* height: 60px; */
+    position: sticky;
+    top: 0;
+    z-index: 2;
+}
+nav img{
+    width: 130px;
+    height: 50px;
+}
+.nav ul{
+    display: flex;
+}
+.nav ul li{
+    list-style: none;
+    margin: 7px 16px;
+    align-self: center;
+    font-size: larger;
+}
+.nav ul li a{
+    text-decoration: none;
+    color: black;
+}
+li a{
+    text-decoration: none;
+    color:white;
+    padding: 5px 0;
+    position: relative;
+}
+li a::after{
+    content:'';
+    background:red;
+    width: 0;
+    height: 2px;
+    position: absolute;
+    bottom: 0;
+    left:0;
+    transition: width 0.6s;
+}
+li a:hover::after{
+   width:100%;
+}
+#i_cart{
+    margin-left: 600px;
+}
+#clr:hover{
+    cursor: pointer;
+}
+#tot{
+    margin-left: -16px;
+    color: red;
+    display: block;
+    margin-top: 7px;
+    font-size: 20px;
+}
+#clr{
+    margin-left: 40px;
+}
+.container{
+    height: 60vh;
+background-color: rgb(143, 185, 18);
+display: flex;
+border-bottom: 3px solid black;
+/* color: #ffffff; */
+}
+.g-font{
+    font-size: 60px;
+    font-weight: 600;
+}
+#b1{
+    height: 60vh;
+    width: 65vw;
+    background-image: url('../images/a-5.png');
+    background-size: cover;
+    background-position-y:bottom ;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+#b2{
+    height: 60vh;
+    width: 35vw;
+    background-image: url('../images/wallpaper.jpg');
+    background-size: contain;
+}
+.social-links a{
+    display: inline-block;
+    height:60px;
+    width:60px;
+    background-color: rgb(191, 191, 191);
+    margin: 0 13px 13px 0;
+    text-align:center;
+    line-height:60px;
+    border-radius: 70px;
+    color: rgb(0, 0, 0);
+    font-size: 25px;
+}
+.social-links #linkedin:hover{
+    color:white;
+    background-color: #008fc3;
+    box-shadow: 0 0 22px #00bbff;
+    text-shadow: 0 0 15px #00bbff;
+}
+.social-links #github:hover{
+    color: black;
+    background-color: white;
+    box-shadow: 0 0 22px #ffffff;
+    text-shadow: 0 0 15px #ffffff;
+}
+.social-links #instagram:hover{
+    color: white;
+    box-shadow: 0 0 22px rgb(255, 0, 128);
+    text-shadow: 0 0 15px rgb(255, 0, 128);
+    background: #ff0044; 
+}
+.social-links #twitter:hover{
+    color: #00ffee;
+    background-color: #2c2c2c;
+    box-shadow: 0 0 22px #00ffee;
+    text-shadow: 0 0 15px #00ffee;
+}
+.social-links #whatsapp:hover{
+    color: #ffffff;
+    background-color: #2fff00;
+    box-shadow: 0 0 22px #a8ff51;
+    text-shadow: 0 0 15px #a8ff51;
+}
+
+.content{
+    display: flex;
+    justify-content: space-around;
+    /* flex-direction: column; */
+    height: 65vh;
+    background-color: #d3d3d3;
+}
+#c1{
+    height: 65vh;
+    width: 74vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    /* background-color: rgb(143, 143, 143); */
+    background: linear-gradient(90deg, #e3ffe7 0%, #d9e7ff 100%);
+}
+#c2{
+    height: 65vh;
+    width: 40vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+#form{
+    height: 40vh;
+    width: 25vw;
+    background-color: #484848;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    color: white;
+    border-radius: 25px;
+}
+#email{
+    height: 25px;
+    /* padding: 9px; */
+    width: 180px;
+    border-radius: 5px;
+    background-color: #232323;
+    color: white;
+}
+#textA{
+    height: 17vh;
+    width: 15vw;
+    background-color: #232323;
+    border-radius: 5px;
+    padding: 5px;
+    color: white;
+}
+#submit{
+    background-color: #232323;
+    color: white;
+    height: 30px;
+    width: 90px;
+    border: 2px solid  white;
+    border-radius: 5px;
+}
+#submit:hover{
+    cursor: pointer;
+}
+#head{
+    height: 20vh;
+}
+#cities{
+    height: 40vh;
+    width: 42vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.c11{
+    width: 18vw;
+    height: 9vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    /* text-align: center; */
+    /* justify-content: center; */
+    /* vertical-align:middle; */
+
+}
+#city1{
+    background-image: url('../images/mumbai.jpg');
+    background-size: cover;
+    background-position-y:top ;
+}
+#city2{
+    background-image: url('../images/delhi.jpg');
+    background-size: cover;
+    background-position-y:center;
+}
+#city3{
+    background-image: url('shillong-1.jpg');
+    background-size: contain;
+}
+#city4{
+    background-image: url('Delhi-1.jpg');
+    background-size: cover;
+}
+#city3{
+    background-image: url();
+}
+.c11{
+    font-size: larger;
+    font-weight: 600;
+    font-family:'Merriweather', serif;
+    border: 1px solid black;
+    border-radius: 20px;
+}
